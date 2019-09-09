@@ -1,18 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#1c222f"
+    tools:context=".MainActivity" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="194dp"
+        app:srcCompat="@drawable/menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="82dp"
+        app:srcCompat="@drawable/current_song_image" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="113dp"
+        app:srcCompat="@drawable/prev_song_image" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="113dp"
+        app:srcCompat="@drawable/next_song_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="-39dp"
+        android:layout_marginEnd="105dp"
+        android:text="Yellow Pink"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="415dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="-2dp"
+        app:srcCompat="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="196dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/play_button" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/fast_forward" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/revind" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="-1dp"
+        app:srcCompat="@drawable/repeat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="-1dp"
+        app:srcCompat="@drawable/speaker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="105dp"
+        android:text="Brotherhood"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
